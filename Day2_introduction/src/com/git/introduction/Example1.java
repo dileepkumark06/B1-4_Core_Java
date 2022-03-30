@@ -1,7 +1,8 @@
+
 package com.git.introduction;
 import java.util.Scanner;
 
-public class Day2_intro {
+public class Example1 {
 
 	  public static void main(String[] args)
 	{
