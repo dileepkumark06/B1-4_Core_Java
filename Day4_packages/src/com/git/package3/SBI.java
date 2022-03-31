@@ -2,12 +2,12 @@ package com.git.package3;
 
 public class SBI 
 {
- private int balance;
- SBI(int bal)
+ public int balance;
+ public SBI(int bal)
  {
 	 balance=bal;
  }
- void display()
+ public void display()
  {
 	 System.out.println(balance);
  }
