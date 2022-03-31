@@ -1,22 +1,21 @@
 package com.git.oops;
 
-public class constructor {
-
+public class Nonpara
+{
 	String str;
 	int a;
-	constructor(String st,int x)
+	Nonpara()
 	{
-		str=st;
-		a=x;
+		str="Soujan";
+		a=11;
 	}
 	void display()
 	{
 		System.out.println(str+" "+a);
-		
 	}
 	public static void main(String[] args) 
 	{
-		constructor c=new constructor("Soujan",55);
+		Nonpara c=new Nonpara();
 		c.display();
 	}
 
