@@ -1,6 +1,6 @@
 package com.git.package4;
 
-import com.git.package3.*;
+import com.git.package3.SBI;
 
 public class Encapsulation {
 
