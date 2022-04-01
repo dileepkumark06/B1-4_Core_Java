@@ -11,7 +11,7 @@ class Child extends Parent
 {
 	void display()
 	{
-		System.out.println("Single inheritance ");
+		System.out.println("Single inheritance");
 	}
 }
 class Singleinheritance
