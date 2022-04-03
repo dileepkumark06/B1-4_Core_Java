@@ -12,5 +12,4 @@ public class RelationalOperator
 		boolean res=(a==b);
 		System.out.println(res);
 	}
-
 }
