@@ -25,7 +25,7 @@ class OnePlus extends CellPhones
 		System.out.println("PUB-G");
 	}
 }
-public class HierchicalInhritance 
+public class HierchicalInheritance 
 {
 
 	public static void main(String[] args) 
