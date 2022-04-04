@@ -8,6 +8,7 @@ public class BitwiseOperator {
 		int res=a & b;
 		int res1=a | b;
 		int res2=a ^ b;
+		int res3= a<<b;
 		System.out.println(res);
 		System.out.println(res1);
 		System.out.println(res2);
