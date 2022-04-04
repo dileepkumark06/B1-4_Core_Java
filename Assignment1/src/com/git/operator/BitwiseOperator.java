@@ -12,6 +12,7 @@ public class BitwiseOperator {
 		System.out.println(res);
 		System.out.println(res1);
 		System.out.println(res2);
+		System.out.println(res3);
 	}
 
 }
