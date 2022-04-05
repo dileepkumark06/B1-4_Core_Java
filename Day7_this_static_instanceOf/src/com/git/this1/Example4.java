@@ -14,12 +14,12 @@ public class Example4
 	}
 	void display()
 	{
-		System.out.println("str");
+		System.out.println(str);
 	}
 	public static void main(String[] args) 
 	{
 		Example4 e=new Example4();
-		e.getdisplay();
+		e.get().display();
 	}
 
 }
