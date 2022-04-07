@@ -2,11 +2,16 @@ package com.git.static1;
 
 public class Example3 
 {
-String str;
-int 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	static String str;
+	static int a;
+	static 
+	{
+		str="Allu Arjun";
+		a=22;
 	}
-
+	public static void main(String[] args) 
+	{
+		System.out.println(str);
+		System.out.println(a);
+	}
 }

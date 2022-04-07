@@ -5,18 +5,19 @@ public class Example2
 	int a,b;
 	void display(int a,int b)
 	{
-		a=a;
-		b=b;
+		this.a=a;
+		this.b=b;
 	}
 	void print()
 	{
-		System.out.println("value of a: "+a);
-		System.out.println("value of a: "+a);
-	}	
-	public static void main(String[] args)
+		System.out.println("Value of a: "+a);
+		System.out.println("Value of a: "+b);
+	}
+	
+	public static void main(String[] args) 
 	{
-		Example1 e=new Example1("C2TC Program");
-		e.display(10,25);
+		Example2 e=new Example2();
+		e.display(10, 25);
 		e.print();
 	}
 
