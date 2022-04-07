@@ -1,13 +1,8 @@
 package com.git.polymorphism;
 
-public class Parent {
 
-}
-
-
-package com.polymorphism;
-
-class Base {
+class Base 
+{
 	void method1()
 	{
 		System.out.println("Parent1");
