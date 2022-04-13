@@ -1,19 +1,48 @@
 package com.git.multithreading;
 
-import java.lang.Thread;
+class A
+{
+	void print(int num)
+	{
+		synchronized(this)
+		{
+			for(int i=1;i<=3;i++)
+			{
+			System.out.println(num*i);
+		try
+		{
+			Thread.sleep(400);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	  }
+	}
+}
+
+class B extends Thread  
+{
+	A obj;
+	B(A obj)
+	{
+		this.obj=obj;
+	}
+	public void run()
+		{
+			obj.print(50);
+		}
+	}
+}
 public class Example3
 {
 	public static void main(String[] args) 
 	{
-		    Thread t = Thread.currentThread();
-		    System.out.println("Current Thread :" + t);
-		    try
-		    {
-		        Thread.sleep(1);
-		    }
-		    catch (InterruptedException e)
-		    {
-		        System.out.println("Main Thread Interrupted") ;
-		    }
-		}
+		A a=new A();
+		B t1=new B(a);
+		B t2=new B(a);
+		A a=new A();
+		t1.start();
+		t2.start();
 	}
+}
