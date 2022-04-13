@@ -19,8 +19,8 @@ class A
 		}
 	  }
 	}
+  }
 }
-
 class B extends Thread  
 {
 	A obj;
@@ -32,7 +32,6 @@ class B extends Thread
 		{
 			obj.print(50);
 		}
-	}
 }
 public class Example3
 {
@@ -41,7 +40,6 @@ public class Example3
 		A a=new A();
 		B t1=new B(a);
 		B t2=new B(a);
-		A a=new A();
 		t1.start();
 		t2.start();
 	}

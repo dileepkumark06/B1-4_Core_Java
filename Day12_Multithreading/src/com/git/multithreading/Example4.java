@@ -15,5 +15,5 @@ public class Example4
 		    {
 		        System.out.println("Main Thread Interrupted") ;
 		    }
-		}
 	}
+}
