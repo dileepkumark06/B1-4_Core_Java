@@ -18,6 +18,5 @@ public class Example3
 			int a=p(n,m);
 			System.out.print(a);
 			s.close();
-
 	    }
 }
