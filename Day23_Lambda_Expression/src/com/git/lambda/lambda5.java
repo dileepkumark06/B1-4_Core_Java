@@ -1,5 +1,19 @@
 package com.git.lambda;
 
-public class lambda5 {
+interface C
+{
+	String print(String message);
+}
 
+public class lambda5 
+{
+	public static void main(String[] args) 
+	{
+		//Lambda Expression using return
+		C obj=(String message)->
+		{
+			return message;
+		};
+		System.out.println("The Name is: "+obj.print("Soujan"));
+	}
 }
