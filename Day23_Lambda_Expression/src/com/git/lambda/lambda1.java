@@ -12,7 +12,6 @@ public class lambda1
 		A obj=()->
 		{
 			System.out.println("Welcome to Lambda Expression");
-
 		};
 		obj.show();
 	}
