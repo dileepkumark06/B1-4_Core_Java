@@ -26,12 +26,17 @@ public abstract class ShopAcc
 	{
 		return charges;
 	}
-	public static void setCharges(float charges) 
+	public static float getCharge() 
 	{
-		ShopAcc.charges = charges;
+		return charges;
 	}
 	public static void setAccNm(String accNm) 
 	{
 		ShopAcc.accNm = accNm;
+	}
+	@Override
+	public String toString() 
+	{
+		return "ShopAcc[accNo="+accNo+ ",accNm="+accNm+",charges="+charges+"]";
 	}
 }
