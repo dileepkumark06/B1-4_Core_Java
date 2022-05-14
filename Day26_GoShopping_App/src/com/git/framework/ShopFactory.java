@@ -1,7 +1,7 @@
-  package com.git.framework;
+package com.git.framework;
 
 public abstract class ShopFactory 
 {
-	abstract PrimeAcc getNewPrimeAccount();
-	abstract NormalAcc getNewNormalAccount();
+	public abstract PrimeAcc getNewPrimeAccount(int accNo,String accNm,float delivaryCharges,float charges);
+	public abstract NormalAcc getNewNormalAccount(int accNo,String accNm,float delivaryCharges,float charges);
 }

@@ -2,20 +2,36 @@ package com.git.framework;
 
 public abstract class ShopAcc 
 {
-	private int accNo;
-	private String accNm;
-	private float charges;
-	public void bookProduct(float charges)
+	private static int accNo;
+	private static String accNm;
+	private static float charges;
+	
+	public ShopAcc(int accNo, String accNm, float charges) 
+	{
+		ShopAcc.accNo = accNo;
+		ShopAcc.accNm = accNm;
+		ShopAcc.charges = charges;
 	}
-
+	public abstract void bookProduct(float charges);
+	public abstract void items(float charges);
+	public static int getAccNo() 
 	{
-	public void items(float charges)
-	{
-		
+		return accNo;
 	}
-	@Override
-	public String toString() 
+	public static String getAccNm() 
 	{
-		return String.format("ShopAcc [accNo=%s, accNm=%s, charges=%s]", accNo, accNm, charges);
+		return accNm;
+	}
+	public static float getCharges() 
+	{
+		return charges;
+	}
+	public static void setCharges(float charges) 
+	{
+		ShopAcc.charges = charges;
+	}
+	public static void setAccNm(String accNm) 
+	{
+		ShopAcc.accNm = accNm;
 	}
 }
