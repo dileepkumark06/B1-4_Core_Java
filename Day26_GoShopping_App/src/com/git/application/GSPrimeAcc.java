@@ -3,7 +3,6 @@ package com.git.application;
 import com.git.framework.PrimeAcc;
 import com.git.framework.ShopAcc;
 
-
 public class GSPrimeAcc extends PrimeAcc
 {
 	private static float charges;
@@ -15,20 +14,21 @@ public class GSPrimeAcc extends PrimeAcc
 	@Override
 	public void bookProduct(float charges) 
 	{
-		System.out.println("Account No"+ShopAcc.getAccNo()+"\n"+"Account Name: "+ShopAcc.getAccNm()+"\n"+"Charges: "+ShopAcc.getCharge()+"\n"+"Delivery Charges: "ShopAcc.getCharges());
+		System.out.println("Account No"+ShopAcc.getAccNo()+"\n"+"Account Name: "+ShopAcc.getAccNm()+"\n"+"Charges: "+ShopAcc.getCharge()+"\n"+"Delivery Charges: "+ShopAcc.getCharges());
 	}
+	 
 	public static float getCharges() 
 	{
 		return GSPrimeAcc.charges;
 	}
 	@Override
-	public void items(float item_id) 
+	public void items(float items_id) 
 	{
 		
 	}
+	@Override
 	public String toString() 
 	{
-		return "GSPrimeAcc[toString()="+super.toString()+"]";
+		return "GSPrimeAcc[toString()="+super.toString()+",getCharges()="+getCharges()+"]";
 	}
-	
-	
+}	
