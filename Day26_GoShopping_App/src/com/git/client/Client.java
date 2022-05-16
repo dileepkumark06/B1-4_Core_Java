@@ -13,15 +13,15 @@ public class Client
 	{
 		ShopFactory obj=new GSShopFactory();
 		PrimeAcc p=new GSPrimeAcc(101,"Dileep",0.0f,true);
-	NormalAcc n=new GSNormalAcc(102,"Vinay",0.0f,100.0f);
-	System.out.println("Prime Account: ");
-	p.bookProduct(350.0f);
-	System.out.println();
-	System.out.println("Normal Account: ");
-	n.bookProduct(400.0f);
-	
-	System.out.println(p);
-	System.out.println();	
-	System.out.println(n);
+		NormalAcc n=new GSNormalAcc(102,"Vinay",50.0f,0.0f);
+		System.out.println("Prime Account: ");
+		p.bookProduct(350.0f);
+		System.out.println();
+		System.out.println("Normal Account: ");
+		n.bookProduct(400.0f);
+		
+		System.out.println(p);
+		System.out.println();	
+		System.out.println(n);
 	}
 }

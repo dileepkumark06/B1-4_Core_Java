@@ -14,7 +14,7 @@ public class GSPrimeAcc extends PrimeAcc
 	@Override
 	public void bookProduct(float charges) 
 	{
-		System.out.println("Account No"+ShopAcc.getAccNo()+"\n"+"Account Name: "+ShopAcc.getAccNm()+"\n"+"Charges: "+ShopAcc.getCharge()+"\n"+"Delivery Charges: "+ShopAcc.getCharges());
+		System.out.println("Account No"+ShopAcc.getAccNo()+"\n"+"Account Name: "+ShopAcc.getAccNm()+"\n"+"Charges: "+charges+"\n"+"Delivery Charges: "+PrimeAcc.getDeliverycharges());
 	}
 	 
 	public static float getCharges() 

@@ -9,7 +9,7 @@ public abstract class PrimeAcc extends ShopAcc
 	public PrimeAcc(int accNo,String accNm,float charges,boolean isPrime) 
 	{
 		super(accNo,accNm,charges);
-		PrimeAcc.isPrime=isPrime;
+		this.isPrime=isPrime;
 	}
 
 	public static boolean getisPrime() 

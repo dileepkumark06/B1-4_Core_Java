@@ -13,7 +13,8 @@ public class GSNormalAcc extends NormalAcc
 	@Override
 	public void bookProduct(float charges) 
 	{
-		System.out.println("Account No"+NormalAcc.getAccNo()+"\n"+"Account Name: "+NormalAcc.getAccNm()+"\n"+"Charges: "+NormalAcc.getCharge()+"\n"+"Delivery Charges: "+NormalAcc.getCharges());
+		float charges1=charges+NormalAcc.getDeliveryCharges();
+		System.out.println("Account No"+NormalAcc.getAccNo()+"\n"+"Account Name: "+NormalAcc.getAccNm()+"\n"+"Charges: "+NormalAcc.getCharge()+"\n"+"Delivery Charges: "+NormalAcc.getDeliveryCharges());
 	}
 	@Override
 	public void items(float item_id) 
